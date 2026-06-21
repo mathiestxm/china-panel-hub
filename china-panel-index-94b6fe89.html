@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>再一次，回到 leyu · 博客手记</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(145deg, #fce9d6 0%, #f7d8bd 50%, #f0cba7 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+            line-height: 1.6;
+            color: #3b2c1f;
+        }
+        .content-card {
+            max-width: 760px;
+            width: 100%;
+            background: #fffcf7;
+            border-radius: 32px;
+            box-shadow: 0 12px 30px rgba(110, 75, 45, 0.12), 0 4px 10px rgba(0, 0, 0, 0.03);
+            padding: 2.8rem 2.4rem;
+            transition: box-shadow 0.2s ease;
+        }
+        @media (max-width: 540px) {
+            .content-card { padding: 2rem 1.4rem; }
+        }
+        .hero-title {
+            font-size: 2.4rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.25rem;
+            color: #4d3422;
+            line-height: 1.2;
+        }
+        .hero-sub {
+            font-size: 1rem;
+            color: #8b6f57;
+            margin-top: 0.1rem;
+            margin-bottom: 1.6rem;
+            border-left: 3px solid #dbb594;
+            padding-left: 0.9rem;
+            font-style: normal;
+        }
+        .lead {
+            font-size: 1.1rem;
+            color: #4d3a2a;
+            margin-bottom: 1.8rem;
+            font-weight: 400;
+            background: #f8efe6;
+            padding: 1.2rem 1.4rem;
+            border-radius: 20px;
+            border: 1px solid #ebddcf;
+        }
+        .section-heading {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+            color: #4a3322;
+        }
+        .section-heading:first-of-type {
+            margin-top: 0;
+        }
+        p {
+            margin-bottom: 1.2rem;
+            font-weight: 400;
+            color: #3d3024;
+        }
+        .highlight-quote {
+            background: #f3e6da;
+            border-left: 6px solid #ba8b6b;
+            padding: 1rem 1.6rem;
+            margin: 1.6rem 0 2rem 0;
+            border-radius: 0 20px 20px 0;
+            font-size: 1rem;
+            color: #3f2d1d;
+            font-style: normal;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.02);
+        }
+        .highlight-quote p {
+            margin-bottom: 0.2rem;
+        }
+        .highlight-quote .quote-attribution {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #8a6e59;
+            margin-top: 0.4rem;
+        }
+        .inline-link {
+            color: #976b4a;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s, color 0.15s;
+            padding-bottom: 1px;
+        }
+        .inline-link:hover {
+            border-bottom-color: #976b4a;
+            color: #6f4c32;
+        }
+        .action-button {
+            display: inline-block;
+            background: #f0dccc;
+            border: 1px solid #d6b99f;
+            color: #402f20;
+            font-weight: 500;
+            padding: 0.6rem 1.8rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-size: 1rem;
+            margin: 0.8rem 0 0.2rem 0;
+            transition: background 0.2s, box-shadow 0.15s;
+            box-shadow: 0 2px 6px rgba(130, 85, 50, 0.08);
+        }
+        .action-button:hover {
+            background: #e6cdb5;
+            box-shadow: 0 4px 12px rgba(110, 72, 42, 0.12);
+            border-color: #c4a184;
+        }
+        .meta-note {
+            font-size: 0.9rem;
+            color: #7f6856;
+            margin-top: 2.4rem;
+            padding-top: 1.2rem;
+            border-top: 1px dashed #dccfc2;
+            text-align: left;
+        }
+        .faq-summary {
+            background: #f5ede4;
+            padding: 1.2rem 1.6rem;
+            border-radius: 24px;
+            margin: 2rem 0 0.8rem 0;
+        }
+        .faq-summary details {
+            margin-bottom: 0.6rem;
+        }
+        .faq-summary summary {
+            font-weight: 500;
+            cursor: pointer;
+            color: #4b3423;
+            padding: 0.3rem 0;
+        }
+        .faq-summary summary::-webkit-details-marker {
+            color: #a88266;
+        }
+        .faq-summary p {
+            margin: 0.4rem 0 0.4rem 1.2rem;
+            font-size: 0.95rem;
+            color: #3d2f23;
+        }
+        .footer-tag {
+            margin-top: 2.2rem;
+            font-size: 0.85rem;
+            color: #8a7563;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="content-card">
+    <div class="hero-title">又回来了</div>
+    <div class="hero-sub">一篇关于持续关注与收藏的笔记 · 2025</div>
+
+    <p class="lead">
+        有些地方，你总会在某个安静的下午想起。不是因为它多特别，而是因为你曾在里面找到过一种自然的节奏。今天想聊聊再次访问、收藏与保持连接这件事——不赶时间，也不做推荐，只是记录一点感受。
+    </p>
+
+    <div class="section-heading">再次打开，像翻开旧书</div>
+    <p>
+        前阵子整理浏览器书签，翻到一条去年存下的链接，点进去一看，页面还在，内容也还在，甚至比记忆里更清爽了一些。那种感觉有点像从书架上抽出一本读过一半的书，随手翻开，马上就能接上之前的思路。<a href="https://china-panel-leyu.com" class="inline-link">leyu</a> 就是这样一个地方——你不需要记住它所有的细节，但每次回来，它都在那里，不急不躁。
+    </p>
+
+    <div class="section-heading">收藏夹里的定心丸</div>
+    <p>
+        我们收藏过太多东西：一篇长文、一个工具、一份清单。但真正会反复打开的，永远是那些让你觉得「放这儿合适」的站点。收藏不一定是囤积，也可以是一种安静的确认——确认某个地方值得被记住。把 <a href="https://china-panel-leyu.com" class="inline-link">leyu</a> 放进收藏夹，不需要太多理由，就像在熟悉的街角认下一棵梧桐树，下次路过自然抬头看。
+    </p>
+
+    <div class="highlight-quote">
+        <p>“持续关注，未必是每天必看，而是你知道那里总有些东西可读、可看、可停留。”</p>
+        <div class="quote-attribution">—— 一位朋友在邮件里写的</div>
+    </div>
+
+    <div class="section-heading">缓慢而稳定的节奏</div>
+    <p>
+        这几年渐渐习惯了一种浏览方式：不刷页面，不追更新，而是隔一段时间，安静地去几个固定的地方坐坐。不需要被提醒，也不需要推送，纯粹是自己想去。<a href="https://china-panel-leyu.com" class="inline-link">leyu</a> 的风格恰好符合这种习惯——它不喧哗，不催促，内容有自己的步调。如果你也喜欢这种节奏，或许可以把它放在浏览器的一个角落里，想起来时点开看看。
+    </p>
+
+    <div class="faq-summary">
+        <details>
+            <summary>为什么要持续关注一个站点？</summary>
+            <p>持续关注不是为了不错过什么，而是保留一个精神上的熟悉坐标。有些页面值得反复访问，因为它们提供的是稳定的内容质感，而不是即时的信息冲击。</p>
+        </details>
+        <details>
+            <summary>收藏夹里的链接会失效吗？</summary>
+            <p>大部分可靠的站点会保持长久在线。<a href="https://china-panel-leyu.com" class="inline-link">leyu</a> 目前维护稳定，适合作为长期保留的收藏项。当然，任何网络资源都有可能变化，建议不定期回访确认。</p>
+        </details>
+        <details>
+            <summary>除了收藏，还能做什么？</summary>
+            <p>其实什么都不必多做。收藏、偶尔回访、在合适的时候推荐给朋友，就已经足够。好的站点不需要复杂的互动，安静地存在就是价值。</p>
+        </details>
+    </div>
+
+    <div style="margin-top: 1.8rem;">
+        <a href="https://china-panel-leyu.com" class="action-button">leyu</a>
+        <span style="margin-left: 0.6rem; font-size: 0.9rem; color: #7c6856;">· 收藏这个地址</span>
+    </div>
+
+    <div class="meta-note">
+        <strong>写在后面</strong><br>
+        这篇笔记写于一个阴天的下午。如果你读到这里，正好也有一个常常回访的地方，那么你大概明白我在说什么。保持关注，保持收藏，保持一种属于自己的浏览节奏——就够了。下次打开浏览器时，或许你会想起这里。
+    </div>
+
+    <div class="footer-tag">
+        <span># 持续关注 · # 收藏 · # leyu</span>
+    </div>
+</div>
+</body>
+</html>
